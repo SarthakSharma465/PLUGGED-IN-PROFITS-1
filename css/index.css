@@ -11,3 +11,15 @@
             height:500px;
     
 }
+.body{
+    background-color: rgb(152, 248, 224);
+}
+.row{
+    margin: 40px;
+}
+.card{
+    margin: 40px;
+}
+.list-group{
+    margin: 40px;
+}
