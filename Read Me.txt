@@ -1,0 +1,5 @@
+*Plugged-In Profits is a website where the user get the latest details of various stocks and 
+ get to know about the hot news of the stock market.
+*There is a section of blog writing about different companies and stocks whose informations are stored in a database.
+*A chat bot has been added which will deal with user querries using google.
+*There is also a support tab where user can donate using the payment gateway. 

@@ -26,4 +26,14 @@
 .stock-heading{
 
     font-family: 'Caveat', cursive;
+    color: rgb(62, 35, 161);
+}
+.footer{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+}
+#click2{
+    color: 	aliceblue;
+    font-size:25px;
 }
