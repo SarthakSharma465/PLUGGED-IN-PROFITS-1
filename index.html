@@ -10,6 +10,7 @@
     <link rel="stylesheet" href = "css/index.css" />
     <link rel="stylesheet" href="./css/chat.css">
     <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/contact_form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <title>Plugged-In Profits</title>
@@ -214,12 +215,39 @@
       <!-- ---------Chat Bot ends -->
 
 
+      <!-- -----Contact Form begins -->
+
+
+      
+	<div class="contact" id="contact-id">
+		<section><a href="#!">[ close ]</a></section>
+		<form action="/ajax/email" class="contact-form" method="POST" onsubmit="return submitEmailForm(this);">
+			<div>
+				<input type="text" name="name" placeholder="name" class="contact-form-input" required />
+			</div>
+			<div>
+				<input type="email" name="email" placeholder="email" class="contact-form-input" required />
+			</div>
+			<div>
+				<textarea name="message" class="contact-form-input" placeholder="MESSAGE" required></textarea>
+			</div>
+			<div>
+				<button type="submit">send</button>
+			</div>
+		</form>
+	</div>
+
+
+      <!-- --------Contact Form ends -->
+
+
       <!-- ---------Footer begins-->
       <div class = "footer">
         <footer>	
           <br>						<!------ Fifth Block, Contacts ----->
           <h3 id="click2">Contact Details</h3>
           <br>
+          <p><a href="#contact-id">CONTACT FORM</a></p>
             <div class="nav-links-img5">
             <a href="mailto:anitbhattacharjee684@gmail.com" target="_blank" title="To Mail me"><img src="images/Gmail.png" alt="Mail" width="50" height="50"></a>
             <a href="https://www.linkedin.com/in/anit-b-a265a3201" target="_blank" title="To check my Linkdin"><img src="images/ln.png" alt="linkdin" width="40" height="40"></a>
@@ -243,6 +271,26 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="./scripts/responses.js"></script>
     <script src="./scripts/chat.js"></script>
+    <script type="text/javascript">
+      function submitEmailForm(form) {
+        var obj = new XMLHttpRequest();
+        obj.onreadystatechange = function(){
+          if(obj.readyState == 4){
+            if(obj.status == 200){
+              var res = JSON.parse(obj.responseText);
+              alert(res.message);
+            }
+            else{
+              alert("XMLHttp status " + obj.status + ": " + obj.statusText);
+            }
+          }
+        };
+        obj.open("post", form.action, true);
+        obj.setRequestHeader("Content-Type", "application/json"); // NOTICE: "application/json"
+        obj.send(JSON.stringify({ name: form.name.value, email: form.email.value, message: form.message.value }));
+        return false;
+      }
+    </script>
     
   </body>
 </html>
