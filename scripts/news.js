@@ -6,7 +6,7 @@ function getnews(){
 var keyword = $("#keyword").val();
 
 if(keyword == ''){
-    keyword = "bse";
+    keyword = "sharemarket";
 }
 
 var url = "https://newsapi.org/v2/everything?q="+keyword+"&apiKey=63612b6a99b04113b267076acd03a06d";
