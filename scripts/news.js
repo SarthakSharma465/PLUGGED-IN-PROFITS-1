@@ -14,7 +14,7 @@ var url = "https://newsapi.org/v2/everything?q="+keyword+"&apiKey=63612b6a99b041
 $.get (url,(response)=>{
     console.log(response.articles);
 
-    for(i=0 ; i<5;i++){
+    for(i=1 ; i<16;i= i+3){
         var html = `<div class="card mb-3 shadow">
             <div class="row g-0">
             <div class="col-md-4">
