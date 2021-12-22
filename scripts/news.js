@@ -15,7 +15,7 @@ $.get (url,(response)=>{
     console.log(response.articles);
 
     for(i=0 ; i<5;i++){
-        var html = `<div class="card mb-3 shadow"  ;">
+        var html = `<div class="card mb-3 shadow">
             <div class="row g-0">
             <div class="col-md-4">
               <img src="${response.articles[i].urlToImage}" class="img-fluid rounded-start" alt="...">
