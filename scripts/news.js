@@ -11,12 +11,6 @@ if(keyword == ''){
 
 var url = "https://newsapi.org/v2/everything?q="+keyword+"&apiKey=63612b6a99b04113b267076acd03a06d";
 
-jQuery.ajaxPrefilter(function(options) {
-  if (options.crossDomain && jQuery.support.cors) {
-      options.url = 'https://cors-anywhere.herokuapp.com/' + options.url;
-  }
-});
-
 $.get (url,(response)=>{
     console.log(response.articles);
 
