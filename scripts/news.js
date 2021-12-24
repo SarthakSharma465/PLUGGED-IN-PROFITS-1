@@ -6,10 +6,10 @@ function getnews(){
 var keyword = $("#keyword").val();
 
 if(keyword == ''){
-    keyword = "sharemarket";
+    keyword = "bse";
 }
 
-var url = "https://newsdata.io/api/1/news?apikey=pub_304807a11a986a20ea166c10a4b89bea9d7a&language=en&q=" + keyword;
+var url = "https://newsdata.io/api/1/news?apikey=pub_304807a11a986a20ea166c10a4b89bea9d7a&country=in&language=en&q=" + keyword;
 
 $.get (url,(response)=>{
     console.log(response.results);
