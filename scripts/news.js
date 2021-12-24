@@ -1,4 +1,5 @@
-
+const NewsAPI = require('newsapi');
+const newsapi = new NewsAPI('63612b6a99b04113b267076acd03a06d', { corsProxyUrl: 'https://cors-anywhere.herokuapp.com/' });
 getnews();
 function getnews(){
 
