@@ -1,4 +1,4 @@
-const NewsAPI = require('newsapi');
+
 const reqOptions = { 'mode': 'cors', headers: { 'Access-Control-Allow-Origin': '*' } };
 getnews();
 function getnews(){
