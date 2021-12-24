@@ -1,5 +1,5 @@
 
-const reqOptions = { 'mode': 'cors', headers: { 'Access-Control-Allow-Origin': '*' } };
+const reqOptions = { 'mode': 'cors', headers: { 'Access-Control-Allow-Origin': 'https://simple-saviour.github.io/PLUGGED-IN-PROFITS/' } };
 getnews();
 function getnews(){
 
