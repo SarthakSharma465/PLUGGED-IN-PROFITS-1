@@ -1,4 +1,14 @@
+// to trigger click when clicked enter
+var input = document.getElementById("keyword");
+input.addEventListener("keyup", function(event) {
+  if (event.keyCode === 13) {
+   event.preventDefault();
+   document.getElementById("button-addon2").click();
+  }
+});
 
+
+// function to callback news api to display required news
 getnews();
 function getnews(){
 
