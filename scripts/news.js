@@ -9,7 +9,7 @@ if(keyword == ''){
     keyword = "sharemarket";
 }
 
-var url = "https://newsapi.org/v2/everything?q="+keyword+"&apiKey=63612b6a99b04113b267076acd03a06d";
+var url = "https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/everything?q="+keyword+"&apiKey=63612b6a99b04113b267076acd03a06d";
 
 $.get (url,(response)=>{
     console.log(response.articles);
