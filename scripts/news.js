@@ -14,7 +14,7 @@ var url = "https://newsdata.io/api/1/news?apikey=pub_304807a11a986a20ea166c10a4b
 $.get (url,(response)=>{
     console.log(response.results);
 
-    for(i=0 ; i<10;i= i+2){
+    for(i=1 ; i<10;i= i+2){
         var html = `<div class="card mb-3 shadow">
             <div class="row g-0">
             <div class="col-md-4">
