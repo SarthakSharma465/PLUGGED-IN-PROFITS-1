@@ -21,7 +21,7 @@
 
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark ">
         <div class="container-fluid">
-          <a class="navbar-brand"><img src = ".\images\Logo.jpg" width="50px" height="50px"></a>
+          <a class="navbar-brand"><img src = ".\images\Logo.jpg" width="40px" height="40px"> Plugged-In Profits</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -37,12 +37,8 @@
                 <a class="nav-link" href="#stock_data">Data</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-              </li>
-              <li class="nav-item">
                 <a class="nav-link" href="#contactUs">Contact</a>
               </li>
-              
             </ul>
           </div>
         </div>
@@ -116,7 +112,7 @@
     <br>
     <br>
 
-    <div class = "container" name = "stock data">
+    <!-- <div class = "container" name = "stock data">
       <a id = "stock_data"></a>
       <div  class = "stock-heading">
       <h1><i><u>
@@ -133,65 +129,14 @@
                 <input type="text" class="form-control shadow" id = "cryptocoin" placeholder="Enter cryptocurrency name" aria-label="Recipient's username" aria-describedby="button-addon2">
                 
                 <input type="text" class="form-control shadow" id = "currency" placeholder="Enter real currency name" aria-label="Recipient's username" aria-describedby="button-addon2">
-                <button class="btn btn-outline-dark shadow" onclick="getnews()" type="button" id="button-addon2">Search</button>
+                <button class="btn btn-outline-dark shadow" onclick="getdata()" type="button" id="button-addon2">Search</button>
               </div>
         </div>
-    </div>
-
-      <div class="row">
-        <div class="col-sm-6">
-          <div class="list-group">
-            <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
-              Top Gainers
-            </button>
-            <button type="button" class="list-group-item list-group-item-action">A second item</button>
-            <button type="button" class="list-group-item list-group-item-action">A third button item</button>
-            <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
-            <button type="button" class="list-group-item list-group-item-action">A disabled button item</button>
-          </div>
-        </div>
-
-      <div class="col-sm-6">
-        <div class="list-group">
-          <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
-            Top Losers
-          </button>
-          <button type="button" class="list-group-item list-group-item-action">A second item</button>
-          <button type="button" class="list-group-item list-group-item-action">A third button item</button>
-          <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
-          <button type="button" class="list-group-item list-group-item-action">A disabled button item</button>
-        </div>
       </div>
+      <div class = "getdata"></div>  
+    </div> -->
 
-      </div>
-
-      <div class="row">
-
-        <div class="col-sm-6">
-          <div class="list-group">
-            <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
-              Most Active Stocks
-            <button type="button" class="list-group-item list-group-item-action">A second item</button>
-            <button type="button" class="list-group-item list-group-item-action">A third button item</button>
-            <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
-            <button type="button" class="list-group-item list-group-item-action">A disabled button item</button>
-          </div>
-        </div>
-
-          <div class="col-sm-6">
-            <div class="list-group">
-              <button type="button" class="list-group-item list-group-item-action active" aria-current="true">
-                Cryptocurrencies
-              </button>
-              <button type="button" class="list-group-item list-group-item-action">A second item</button>
-              <button type="button" class="list-group-item list-group-item-action">A third button item</button>
-              <button type="button" class="list-group-item list-group-item-action">A fourth button item</button>
-              <button type="button" class="list-group-item list-group-item-action">A disabled button item</button>
-            </div>
-          </div>
-        </div>
-
-    </div>
+      
 
       <!-- ---------Stock section ends-->
 
@@ -305,7 +250,7 @@
     <script src="./scripts/responses.js"></script>
     <script src="./scripts/chat.js"></script>
     <script src="./scripts/news.js"></script>
-    
+    <script src="./scripts/app.js"></script>
 
   </body>
 </html> 

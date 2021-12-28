@@ -1,6 +1,9 @@
- /* .navbar 
+.navbar
 {
-} */
+    padding-bottom: -50px;
+    padding-top: 0px;
+
+} 
 .navbar-brand{
     font-family: 'Meow Script', cursive;
 }
@@ -15,7 +18,8 @@
 
 }
 .body{
-    background-color: rgb(152, 248, 224);
+    background-image: url("https://freefrontend.com/assets/img/css-background-patterns/simple-pattern-with-css3.png");
+
 }
 .row{
     margin: 40px;

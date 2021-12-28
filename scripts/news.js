@@ -46,3 +46,50 @@ $.get (url,(response)=>{
 });
 }
 
+// //To display the cryptocurrency exchange rates
+// getdata();
+
+// function getdata(){
+
+//     $(".getdata").text("");
+
+// var cryptocoin = $("#cryptocoin").val();
+// if(cryptocoin == ''){
+//     cryptocoin = "BTC";
+// }
+
+// var currency = $("#currency").val();
+// if(currency == ''){
+//     currency = "INR";
+// }
+
+// var url = "https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency="+cryptocoin+"&to_currency="+currency+"&apikey=5UURJ27EF3L9EKR0";
+
+// $.get (url,(data)=>{
+//     console.log(data);
+
+
+//     var html = `<div class="row">
+//         <div class="col-sm-6">
+//         <div class="card">
+//             <div class="card-body">
+//                 <h5 class="card-title">${data.From_Currency}</h5>
+//                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+//                 <a href="#" class="btn btn-primary">Go somewhere</a>
+//             </div>
+//         </div>
+//         </div>
+//         <div class="col-sm-6">
+//         <div class="card">
+//             <div class="card-body">
+//                 <h5 class="card-title">Special title treatment</h5>
+//                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+//                 <a href="#" class="btn btn-primary">Go somewhere</a>
+//             </div>
+//         </div>
+//         </div>  
+//     </div>`;
+//     $(".getdata").append(html);
+
+// });}
+

@@ -35,7 +35,7 @@ function getTime() {
 
 // Gets the first message
 function firstBotMessage() {
-    let firstMessage = "How's it going?"
+    let firstMessage = "Hello! My name is Alexis. How may I help you?"
     document.getElementById("botStarterMessage").innerHTML = '<p class="botText"><span>' + firstMessage + '</span></p>';
 
     let time = getTime();
@@ -55,12 +55,12 @@ function getHardResponse(userText) {
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 }
 
-//Gets the text text from the input box and processes it
+//Gets the text from the input box and processes it
 function getResponse() {
     let userText = $("#textInput").val();
 
     if (userText == "") {
-        userText = "I love Code Palace!";
+        userText = "Hello";
     }
 
     let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
@@ -71,7 +71,7 @@ function getResponse() {
 
     setTimeout(() => {
         getHardResponse(userText);
-    }, 1000)
+    }, 1000);
 
 }
 
@@ -83,10 +83,9 @@ function buttonSendText(sampleText) {
     $("#chatbox").append(userHtml);
     document.getElementById("chat-bar-bottom").scrollIntoView(true);
 
-    //Uncomment this if you want the bot to respond to this buttonSendText event
-    // setTimeout(() => {
-    //     getHardResponse(sampleText);
-    // }, 1000)
+    setTimeout(() => {
+        getHardResponse(sampleText);
+    }, 1000)
 }
 
 function sendButton() {
@@ -94,7 +93,7 @@ function sendButton() {
 }
 
 function heartButton() {
-    buttonSendText("Heart clicked!")
+    buttonSendText("Heart gifted!")
 }
 
 // Press enter to send a message
@@ -105,6 +104,7 @@ $("#textInput").keypress(function (e) {
 });
 
 
+//contact form
 function submitEmailForm(form) {
     var obj = new XMLHttpRequest();
     obj.onreadystatechange = function(){
@@ -119,7 +119,7 @@ function submitEmailForm(form) {
       }
     };
     obj.open("post", form.action, true);
-    obj.setRequestHeader("Content-Type", "application/json"); // NOTICE: "application/json"
+    obj.setRequestHeader("Content-Type", "application/json");
     obj.send(JSON.stringify({ name: form.name.value, email: form.email.value, message: form.message.value }));
     return false;
   }
