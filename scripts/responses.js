@@ -24,7 +24,7 @@ function getBotResponse(input) {
     else if (input == "What's your name!") {
         return "I'm Alexis and you are?";
     } 
-    else if ("What can I call you?") {
+    else if (input == "What can I call you?") {
         return "I'm Alexis ";
     }
     else if (input == "Good morning!") {
