@@ -197,19 +197,22 @@
 
 
 	<div class="contact" id="contact-id">
-		<section><a href="#!">[ close ]</a></section>
-		<form action="/ajax/email" class="contact-form" method="POST" onsubmit="return submitEmailForm(this);">
+		
+		<form class="contact-form" ; onsubmit="sendEmail(); reset(); return false;">
 			<div>
-				<input type="text" name="name" placeholder="name" class="contact-form-input" required />
+				<input type="text" id="name" placeholder="Name" class="contact-form-input" required >
 			</div>
 			<div>
-				<input type="email" name="email" placeholder="email" class="contact-form-input" required />
+				<input type="email" id="email" placeholder="Email" class="contact-form-input" required >
+			</div>
+      <div>
+				<input type="phone" id="phone" placeholder="Phone Number" class="contact-form-input" required >
 			</div>
 			<div>
-				<textarea name="message" class="contact-form-input" placeholder="MESSAGE" required></textarea>
+				<textarea id="message" class="contact-form-input" placeholder="Enter Your Message" required ></textarea>
 			</div>
 			<div>
-				<button type="submit">send</button>
+				<button type="submit">Send</button>
 			</div>
 		</form>
 	</div>
@@ -251,6 +254,7 @@
     <script src="./scripts/chat.js"></script>
     <script src="./scripts/news.js"></script>
     <script src="./scripts/app.js"></script>
-
+    <script src="./scripts/contact.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html> 

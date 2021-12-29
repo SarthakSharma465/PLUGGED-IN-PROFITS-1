@@ -20,7 +20,7 @@ h1 {
         border: none;
         text-decoration: none;
         outline: none;
-        color: #e05e02;
+        color: #a102e0;
     }
 .contact:target {
     visibility: visible;
@@ -52,7 +52,7 @@ h1 {
     outline: none;
 }
 .contact-form button {
-    background-color: #e05e02;
+    background-color: #460583;
     padding: 20px;
     color: #fff;
 }
