@@ -10,7 +10,7 @@ h1 {
     right: 0;
     bottom: 0;
     transition: .5s;
-    background-color: #fff;
+    background-image: url("https://freefrontend.com/assets/img/css-background-patterns/simple-pattern-with-css3.png");
 }
 .contact section {
     text-align: right;
