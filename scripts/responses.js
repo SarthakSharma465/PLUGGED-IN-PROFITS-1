@@ -36,6 +36,9 @@ function getBotResponse(input) {
     else if (input == "Afternoon") {
         return "Good Afternoon!";
     }
+    else if (input == "Heart gifted!") {
+        return "Thank You!";
+    }
     else {
         return "Try asking something else!";
     }

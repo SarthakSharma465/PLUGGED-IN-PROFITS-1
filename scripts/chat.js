@@ -62,6 +62,7 @@ function getResponse() {
     if (userText == "") {
         userText = "Hello";
     }
+    
 
     let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
 
@@ -93,7 +94,9 @@ function sendButton() {
 }
 
 function heartButton() {
-    buttonSendText("Heart gifted!")
+    buttonSendText("Heart gifted!");
+    getHardResponse("Heart gifted!");
+
 }
 
 // Press enter to send a message
@@ -102,24 +105,3 @@ $("#textInput").keypress(function (e) {
         getResponse();
     }
 });
-
-
-//contact form
-function submitEmailForm(form) {
-    var obj = new XMLHttpRequest();
-    obj.onreadystatechange = function(){
-      if(obj.readyState == 4){
-        if(obj.status == 200){
-          var res = JSON.parse(obj.responseText);
-          alert(res.message);
-        }
-        else{
-          alert("XMLHttp status " + obj.status + ": " + obj.statusText);
-        }
-      }
-    };
-    obj.open("post", form.action, true);
-    obj.setRequestHeader("Content-Type", "application/json");
-    obj.send(JSON.stringify({ name: form.name.value, email: form.email.value, message: form.message.value }));
-    return false;
-  }
