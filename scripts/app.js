@@ -1,24 +1,30 @@
-getdata();
+
 function getdata(){
-// var keyword = $("#keywrd").val();
+var keyword = $("#keywrd").val();
 
-// if(keyword == ''){
-//     keyword = "bitcoin";
-// }
-// var url = "https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords="+keyword+"&apikey=5UURJ27EF3L9EKR0";
-// var symbol;
-// $.get (url,(data)=>{
-//     console.log(data);
-//     symbol = data.bestMatches[0]["1. symbol"];
-//     console.log(symbol);
-// });
+if(keyword == ''){
+    keyword = "bitcoin";
+}
+var url = "https://www.alphavantage.co/query?function=SYMBOL_SEARCH&keywords="+keyword+"&apikey=5UURJ27EF3L9EKR0";
 
-// var url2 = "http://api.marketstack.com/v1/intraday?access_key=813beab3fd547c787c08ff333640e7c5&symbolS=AAPL&interval=1min";
+$.get (url,(data)=>{
+    console.log(data);
 
-// $.get (url2,(data)=>{
-//     console.log(data);
-    
-// });
+    var html = `<div class="card w-50" style = "margin: auto;">
+    <div class="card-body ">
+      <h5 class="card-title">${data.bestMatches[0]["2. name"]}</h5>
+      <p class="card-text">Type : ${data.bestMatches[0]["3. type"]}<br>
+      Region : ${data.bestMatches[0]["4. region"]}<br>
+      Currency : ${data.bestMatches[0]["8. currency"]}<br>
+      Market Opens at :  ${data.bestMatches[0]["5. marketOpen"]}<br>
+      Market Closes at : ${data.bestMatches[0]["6. marketClose"]}</p>
+      
+    </div>
+  </div>
+  <br>`;
+$(".getdata").append(html);
+});
+
 }
 
 getGainers();
