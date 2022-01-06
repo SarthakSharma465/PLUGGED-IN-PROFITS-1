@@ -1,5 +1,6 @@
 
 function getdata(){
+  $(".getdata").text("");
 var keyword = $("#keywrd").val();
 
 if(keyword == ''){
