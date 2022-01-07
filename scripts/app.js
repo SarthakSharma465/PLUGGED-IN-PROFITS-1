@@ -17,8 +17,8 @@ $.get (url,(data)=>{
       <p class="card-text">Type : ${data.bestMatches[0]["3. type"]}<br>
       Region : ${data.bestMatches[0]["4. region"]}<br>
       Currency : ${data.bestMatches[0]["8. currency"]}<br>
-      Market Opens at :  ${data.bestMatches[0]["5. marketOpen"]}<br>
-      Market Closes at : ${data.bestMatches[0]["6. marketClose"]}</p>
+      Market Opens at :  ${data.bestMatches[0]["5. marketOpen"]} local<br>
+      Market Closes at : ${data.bestMatches[0]["6. marketClose"]} local</p>
       
     </div>
   </div>

@@ -16,7 +16,7 @@ function getnews(){
 var keyword = $("#keyword").val();
 
 if(keyword == ''){
-    keyword = "stock exchange";
+    keyword = "bse";
 }
 
 var url = "https://newsdata.io/api/1/news?apikey=pub_304807a11a986a20ea166c10a4b89bea9d7a&country=in&language=en&q=" + keyword;
@@ -30,7 +30,7 @@ $.get (url,(response)=>{
       }
       str = response.results[i].description;
       if(str.length > 250){
-        s = str.substr(0,400);
+        var s = str.substr(0,400);
       }
       k++;
         var html = `<div class="card mb-3 shadow">
