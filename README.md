@@ -3,6 +3,7 @@ Project Name : PLUGGED-IN-PROFITS
 Team Leader : Aryan (https://github.com/Simple-Saviour)
 
 Team Members : Sarthak Sharma (https://github.com/SarthakSharma465)
+
                Anit Bhattacharjee (https://github.com/AnitBhattacharjee)
 
 Domain : Website Development
@@ -11,10 +12,12 @@ Tech Stacks Used : HTML, CSS, JAVASCRIPT, JQUERY, NODE-JS, BOOTSTRAP
 
 Idea : The idea of our project was to create a website where people can get the news and all the data of the stock 
         markets which will assist them in their future investment.
+        
        We came up with this idea because only 3% of the Indians are currently investing in stock market which 
         is incomparable to the 60% and above in USA which I guess is the reason for our country to be still 
         counted as a developing country.And so we took an initiative to reach out to people throughour website 
         and generate a sense of awareness about stock market.
+        
        We wish that our website reaches each and every corner of India and everyone starts investing in stock market.
 
 Achievements : 1. We were able to show various news articles about the stock market and any desired topic of the user 
@@ -27,4 +30,5 @@ Achievements : 1. We were able to show various news articles about the stock mar
                     vivid description about their experience on our website.
  
  Execution : The user can simply click on the link below to access the website.
+ 
               https://simple-saviour.github.io/PLUGGED-IN-PROFITS/
