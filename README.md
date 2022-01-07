@@ -20,8 +20,9 @@ Idea : The idea of our project was to create a website where people can get the 
 Achievements : 1. We were able to show various news articles about the stock market and any desired topic of the user 
                     which keeps the share holders updated about the events in the markets.
                2. We were able to provide the latest top gainers, top losers and most active stock of the share market 
-                    across the globe so that they can get the info about the risk as well as the profit
-                      which they can perceive in the market.
+                    across the globe along with a search bar to get a brief detail about their desired stocks so that 
+                      they can get the info about the risk as well as the profit
+                        which they can perceive in the market.
                3. We added a chat messenger where we can answer to any queries of the user related to the website.
                4. We have added a contact form where people can personally contact us and give a 
                     vivid description about their experience on our website.
