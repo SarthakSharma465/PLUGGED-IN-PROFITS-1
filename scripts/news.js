@@ -8,7 +8,7 @@ input.addEventListener("keyup", function(event) {
 });
 
 
-// function to callback news api to display required news
+// function to call the news api to display required news
 getnews();
 function getnews(){
 
@@ -25,31 +25,32 @@ $.get (url,(response)=>{
     console.log(response.results);
     k = 0;
     for(i=1 ; k<5;i= i+2){
-      while(response.results[i].image_url == null){
+        while(response.results[i].image_url == null){
         i = i + 1;
-      }
-      str = response.results[i].description;
-      if(str.length > 250){
+        }
+        str = response.results[i].description;
+        if(str.length > 250){
         var s = str.substr(0,400);
-      }
-      k++;
+        }
+        k++;
         var html = `<div class="card mb-3 shadow">
             <div class="row g-0">
             <div class="col-md-4">
-              <img src="${response.results[i].image_url}"
-              class="img-fluid rounded-start" alt="...">
+                <img src="${response.results[i].image_url}"
+                class="img-fluid rounded-start" alt="...">
             </div>
             <div class="col-md-8">
             <div class="card-body">
-              <h5 class="card-title">${response.results[i].title}</h5>
-              <p class="card-text">${s}</p>
-              <p class="card-text"><small class="text-muted">${response.results[i].pubDate} | ${response.results[i].source_id} | ${response.results[i].creator}</small></p>
-              <a href="${response.results[i].link}" class="btn btn-primary">Explore</a>
+                <h5 class="card-title">${response.results[i].title}</h5>
+                <p class="card-text">${s}</p>
+                <p class="card-text"><small class="text-muted">${response.results[i].pubDate} | ${response.results[i].source_id} | ${response.results[i].creator}</small></p>
+                <a href="${response.results[i].link}" class="btn btn-primary">Explore</a>
             </div>
             </div>
             </div>
-          </div>`;
-          i = i - 1;
+            </div>`;
+            i = i - 1;
+            
         $(".getnews").append(html);
     }
 
